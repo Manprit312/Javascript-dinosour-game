@@ -1,0 +1,59 @@
+body
+{
+background-color:rgb(35, 174, 216);
+padding: 0;
+margin: 0;
+}
+#score
+{
+text-align:center;
+}
+#game
+{ 
+    width: 900px;
+    height: 500px;
+    border:2px solid grey;
+    margin: auto;
+    background-image: url("/dino.jfif");
+    background-size:cover;
+}
+#cloud{background-image: url("/favpng_heart-cloud-sticker.png");
+background-size: cover;}
+#dino
+{
+ 
+height: 150px;
+width:200px;
+position: relative; 
+top: 350px;
+background-image:url('/dinosaur-black-clipart-434580.png');
+background-size: cover; 
+
+}
+#rock
+{
+ 
+height: 70px;
+width:120px;
+position: relative; 
+top: 280px;
+left:750px;
+background-image:url('/rock-clipart-for-free-download-rock-clipart-246281.png');
+background-size:cover; 
+animation:rock 2s  infinite;
+}
+
+@keyframes rock
+{0%{left:750px;}
+100%{left:-120px}
+}
+.jump-animation{animation:jump 0.5s;} 
+@keyframes jump
+{
+0%{top:350px}
+50%{top:150px}
+75%{top:150px}
+100%{top:350px}
+
+
+}
